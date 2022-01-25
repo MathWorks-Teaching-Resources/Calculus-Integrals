@@ -1,4 +1,4 @@
-# Calculus-Integrals [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####)
+# Calculus-Integrals [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals)
 **Curriculum Module**  
 _Created with R2021b. Compatible with R2021b and later releases._  
 
