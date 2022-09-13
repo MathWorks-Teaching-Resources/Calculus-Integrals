@@ -1,4 +1,6 @@
-# Calculus-Integrals [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals)
+# Calculus-Integrals 
+[![View Calculus-Integrals on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) or
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj)
 **Curriculum Module**  
 _Created with R2021b. Compatible with R2021b and later releases._  
 
@@ -26,7 +28,8 @@ Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teach
 This folder includes scripts that integrate visualizations with instructional content and practice for active instruction or supported review. 
 
 ## ##
-**`integralRiemann.mlx`**
+**`integralRiemann.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralRiemann.mlx)
+
 An interactive script that facilitates exploration of simple geometric integral approximations including both rectangular and trapezoidal approximation methods. This script includes an analysis of real power generation data as well as visualizations of the error in each approximation method.
 
 **Learning Goals:**
@@ -35,7 +38,8 @@ An interactive script that facilitates exploration of simple geometric integral 
 - Explain and apply the trapezoidal approximation.
 
 ## ##
-**`integralAntiderivatives.mlx`**
+**`integralAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralAntiderivatives.mlx)
+
 An interactive script that facilitates exploration of the results of applying the integral as an antiderivative and presents opportunities for practice with immediate feedback.
 
 <img src="https://user-images.githubusercontent.com/88841524/150543056-f999812b-24b9-4932-bfb0-afa6a592a88f.png" width="500">
@@ -44,7 +48,8 @@ An interactive script that facilitates exploration of the results of applying th
 - Compute integrals of linear combinations of powers, sines, cosines, and exponentials by hand.
 
 ## ##
-**`integralSubstitution.mlx`**
+**`integralSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralSubstitution.mlx)
+
 An interactive script that presents visualizations of u-substitution and integration by parts as well as scaffolded and randomized practice with immediate feedback.
 
 <img src="https://user-images.githubusercontent.com/88841524/150543046-e8df0575-a924-42af-b48b-33d206fbd51b.gif" width="500">
@@ -54,7 +59,8 @@ An interactive script that presents visualizations of u-substitution and integra
 - Compute integrals of combinations of powers, sines, cosines, exponentials and logarithms that are solvable by substitution by hand.
 
 ## ##
-**`integralByParts.mlx`**
+**`integralByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralByParts.mlx)
+
 An interactive script that presents visualizations of integration by parts as well as focused and randomized practice with immediate feedback.
 
 <img src="https://user-images.githubusercontent.com/88841524/150543114-8d08a0e5-1560-4871-b6b8-49525c252cef.png" width="500">
@@ -64,7 +70,8 @@ An interactive script that presents visualizations of integration by parts as we
 - Compute integrals involving powers, sines, cosines, exponentials and logarithms that are solvable by integration by parts by hand.
 
 ## ## 
-**`integralFundamentalTheorem.mlx`**
+**`integralFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralFundamentalTheorem.mlx)
+
 An interactive script that presents visualizations of the fundamental theorem of calculus as well as an opportunity to practice computing definite integrals by hand with immediate feedback.
 
 <img src="https://user-images.githubusercontent.com/88841524/150543100-4a69ad94-9830-4db4-a85d-9fe03baa30b8.png" width="500">
@@ -79,7 +86,8 @@ An interactive script that presents visualizations of the fundamental theorem of
 This folder includes scripts for the visualization examples alone, as you might use them in a lecture or class demonstration.
 
 ## ##
-**`vizRiemann.mlx`**
+**`vizRiemann.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizRiemann.mlx)
+
 An interactive script presenting visualizations of approximating the area under a user-defined curve by a user-defined number of rectangular or trapezoidal components as well as options to picture the error in each approximation. The only addition to this set of examples is the option to use a randomly selected point in each interval to determine the height of the rectangular approximation. This only makes sense in the context of an area defined by a function rather than by data, but could be useful for discussing why we generally just stick with interval endpoints. 
 
 <img src="https://user-images.githubusercontent.com/88841524/150543083-249fa442-b709-46df-b997-48c77017d011.png" width="500">
@@ -89,7 +97,8 @@ An interactive script presenting visualizations of approximating the area under 
 - Explain why increasing the number of intervals in an approximation will decrease the error.
 
 ## ##
-**`vizFundamentalTheorem.mlx`** 
+**`vizFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizFundamentalTheorem.mlx)
+
 An interactive script presenting geometric interpretations of both the integral and derivative forms of the Fundamental Theorem of Calculus, applied to user-defined functions. 
 
 <img src="https://user-images.githubusercontent.com/88841524/150543100-4a69ad94-9830-4db4-a85d-9fe03baa30b8.png" width="500">
@@ -98,7 +107,8 @@ An interactive script presenting geometric interpretations of both the integral 
 - Be able to explain why the Fundamental Theorem of Calculus makes sense graphically.
 
 ## ##
-**`vizSubstitution.mlx`**
+**`vizSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizSubstitution.mlx)
+
 An interactive script presenting visualizations displaying the different curves generated by plotting f(g(x)) against g(x) or against x, as well as exploring the impact of using a step of dx or a step of dg = g'(x)dx to traverse the region of interest. The animation code geometrically demonstrates some of the potential savings by showing a default example where the dx integral adds and subtracts a region that the dg integral entirely ignores. 
 
 <img src="https://user-images.githubusercontent.com/88841524/150543046-e8df0575-a924-42af-b48b-33d206fbd51b.gif" width="500">
@@ -107,7 +117,8 @@ An interactive script presenting visualizations displaying the different curves 
 - Graphical understanding of the method of substitution. 
 
 ## ##
-**`vizByParts.mlx`**
+**`vizByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizByParts.mlx)
+
 An interactive script presenting a geometric understanding of integration by parts. The default values generate a classic visualization of a definite integration by parts, but the code is designed to allow investigation of more complicated functions as well by allowing the separation of the resulting image into positive and negative regions with respect to each variable as well as showing or hiding the lines depicting the standard intervals for each variable. 
 
 <img src="https://user-images.githubusercontent.com/88841524/150543114-8d08a0e5-1560-4871-b6b8-49525c252cef.png" width="500">
@@ -116,7 +127,8 @@ An interactive script presenting a geometric understanding of integration by par
 - Graphical understanding of the integration by parts formula. 
 
 ## ##
-**`vizAntiderivatives.mlx`**
+**`vizAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizAntiderivatives.mlx)
+
 An interactive script presenting a visualization of the family of antiderivatives.
 
 <img src="https://user-images.githubusercontent.com/88841524/150543056-f999812b-24b9-4932-bfb0-afa6a592a88f.png" width="500">
@@ -130,7 +142,8 @@ An interactive script presenting a visualization of the family of antiderivative
 This folder includes scripts that are purely directed at student practice, as you might assign for homework or use for understanding checks during class or offer to students to help them study for an exam. 
 
 ## ##
-**`CalculusFlashcards.mlapp`**
+**`CalculusFlashcards.mlapp`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=CalculusFlashcards.mlapp)
+
 A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. Some constructive feedback for common errors is automatically generated. 
 
 <img src="https://user-images.githubusercontent.com/88841524/142695933-c8fde966-d89e-4f2f-9d9f-e9445b52d1c8.png" width="500">
@@ -139,28 +152,32 @@ A MATLAB app that allows the user to select among four different categories of d
 - Computational fluency with common functions and interactions including linearity, the product rule, and the chain rule for derivatives and linearity, substitution, integration by parts, and the fundamental theorem of calculus for integrals.
 
 ## ##
-**`practiceFundamentalTheorem.mlx`**
+**`practiceFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceFundamentalTheorem.mlx)
+
 An interactive set of randomly generated practice problems on definite integrals, including divergent integrals with finite bounds. The overall success rate within each session is available upon request but is not saved.
 
 **Learning Goals:**
 - Computational fluency for definite integrals involving linear and rational combinations of powers, sines, cosines, exponentials and natural logarithms.
 
 ## ##
-**`practiceAntiderivatives.mlx`**
+**`practiceAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceAntiderivatives.mlx)
+
 This script pulls together the interactive exercises for each simple antiderivative from `integralAntiderivatives.mlx` as well as the randomized practice.
 
 **Learning Goals:**
 - Computational fluency with the antiderivatives of powers, sines, cosines, and exponentials.
 
 ## ##
-**`practiceSubstitution.mlx`**
+**`practiceSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceSubstitution.mlx)
+
 This script pulls together the interactive exercises for substitution from `integralSubstitution.mlx` as well as the randomized practice.
 
 **Learning Goals:**
 - Computational fluency with the application of substitution as a method for solving simple integrals.
 
 ## ##
-**`practiceByParts.mlx`**
+**`practiceByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceByParts.mlx)
+
 This script pulls together the interactive exercises for applying the method of integration by parts presented in `integralByParts.mlx` as well as the randomized practice.
 
 **Learning Goals:**
