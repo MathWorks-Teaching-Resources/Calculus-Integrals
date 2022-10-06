@@ -143,7 +143,7 @@ An interactive script presenting a visualization of the family of antiderivative
 This folder includes scripts that are purely directed at student practice, as you might assign for homework or use for understanding checks during class or offer to students to help them study for an exam. 
 
 ## ##
-**`CalculusFlashcards.mlapp`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=CalculusFlashcards.mlapp)
+**`CalculusFlashcards.mlapp`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Navigation.mlx&line=1)
 
 A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. Some constructive feedback for common errors is automatically generated. 
 
