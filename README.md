@@ -19,7 +19,7 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 
 ## Suggested Prework ##
 Minimal use of MATLAB syntax is required to complete some of the interactive practice, but it is all reviewed in the scripts themselves as needed. If you wish a more complete introduction to MATLAB, you can take
-[MATLAB Onramp](https://www.mathworks.com/learn/tutorials/matlab-onramp.html) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.<br>
+[MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.<br>
 
 Looking for more? Find an issue? Have a suggestion? Have questions?   
 Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
