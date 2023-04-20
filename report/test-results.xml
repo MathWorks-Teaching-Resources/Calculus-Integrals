@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="functionTests" skipped="0" tests="3" time="0.040439">
+    <testcase classname="functionTests" name="runCheckExerciseTrue" time="0.010441"/>
+    <testcase classname="functionTests" name="checkExercisePartial" time="0.0054334"/>
+    <testcase classname="functionTests" name="checkExerciseFalse" time="0.024564"/>
+  </testsuite>
+</testsuites>
