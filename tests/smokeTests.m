@@ -7,12 +7,12 @@ classdef smokeTests < matlab.unittest.TestCase
     properties
         fc
         origProj
-        openFilesIdx
+        % openFilesIdx
     end
 
     methods (TestClassSetup)
         function setUpPath(testCase)
-            testCase.openFilesIdx = length(matlab.desktop.editor.getAll);
+            % testCase.openFilesIdx = length(matlab.desktop.editor.getAll);
 
             testCase.fc = fullfile(pwd);
             if contains(testCase.fc,"tests")
@@ -143,10 +143,10 @@ classdef smokeTests < matlab.unittest.TestCase
             else
                 openProject(testCase.origProj.RootFolder)
             end
-            myLastList = matlab.desktop.editor.getAll;
-            if length(myLastList)>testCase.openFilesIdx
-                closeNoPrompt(myLastList(testCase.openFilesIdx+1:end))
-            end
+            % myLastList = matlab.desktop.editor.getAll;
+            % if length(myLastList)>testCase.openFilesIdx
+            %     closeNoPrompt(myLastList(testCase.openFilesIdx+1:end))
+            % end
             cd(testCase.fc)
             close all force
         end
