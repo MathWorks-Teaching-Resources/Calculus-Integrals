@@ -28,12 +28,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-#      # Set up a display server 
-#      - name: Start display server
-#        run: |
-#          sudo apt-get install xvfb 
-#          Xvfb :99 & 
-#          echo "DISPLAY=:99" >> $GITHUB_ENV
+      # Set up a display server 
+      - name: Start display server
+        run: |
+          sudo apt-get install xvfb
+          Xvfb :99 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       
       # Sets up MATLAB on the GitHub Actions runner
       - name: Setup MATLAB
@@ -41,12 +41,12 @@ jobs:
         with:
           release: ${{ matrix.MATLABVersion }}
       
-#      - name: Run tests
-#        uses: matlab-actions/run-command@v1
-#        with:
-#          command: |
-#            connector.internal.startConnectionProfile("loopbackHttps");
-#            com.mathworks.matlabserver.connector.api.Connector.ensureServiceOn();
+      - name: Run MATLAB command
+        uses: matlab-actions/run-command@v1
+        with:
+          command: |
+            connector.internal.startConnectionProfile("loopbackHttps");
+            com.mathworks.matlabserver.connector.api.Connector.ensureServiceOn();
 
       # Runs a set of commands using the runners shell
       - name: Run all tests
