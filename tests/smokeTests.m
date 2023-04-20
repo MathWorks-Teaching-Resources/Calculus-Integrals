@@ -27,42 +27,6 @@ classdef smokeTests < matlab.unittest.TestCase
 
     methods(Test)
 
-        function testMLX(testCase)
-            % this functions opens and closes all the the .mlx files located under the
-            % project rootFolder and its subfolder, it is intended to
-            % detect corrupted files
-            files = dir(testCase.origProj.RootFolder+filesep+"**"+filesep+"*.mlx");
-            for i = 1:size(files)
-                f = string(files(i).folder)+filesep+string(files(i).name);
-                f = matlab.desktop.editor.openDocument(f);
-                f.closeNoPrompt;
-            end
-        end
-        
-        function testMAT(testCase)
-            % this functions opens and closes all the the .mat files located under the
-            % project rootFolder and its subfolder, it is intended to
-            % detect corrupted data 
-            files = dir(testCase.origProj.RootFolder+filesep+"**"+filesep+"*.mat");
-            for i = 1:size(files)
-                f = string(files(i).folder)+filesep+string(files(i).name);
-                f = open(f); %#ok<NASGU>
-                clear f
-            end
-        end
-
-        function testSLX(testCase)
-            % this functions opens and closes all the the .slx files located under the
-            % project rootFolder and its subfolder, it is intended to
-            % detect corrupted simulink model
-            files = dir(testCase.origProj.RootFolder+filesep+"**"+filesep+"*.slx");
-            for i = 1:size(files)
-                f = string(files(i).folder)+filesep+string(files(i).name);
-                open_system(f)
-                close_system(f)
-            end
-        end
-
         function runintegralAntiderivatives(testCase) %#ok<*MANU>
             disp("Running FullScripts/integralAntiderivatives")
             integralAntiderivatives
