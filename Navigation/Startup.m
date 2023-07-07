@@ -1,7 +1,11 @@
 function Startup
 curFile = matlab.desktop.editor.getActive;
 if isMATLABReleaseOlderThan("R2023b")
-    open("SplashPage2.mlx")
+    if contains(locDir,filesep+"MATLAB Drive")
+        open("SplashPage2.mlx")
+    else
+        open("Overview.html")
+    end
 else
     open("SplashPage.mlx")
 end
