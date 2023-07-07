@@ -1,10 +1,12 @@
 function Startup
-% Open the overview file
-locDir = pwd;
-if contains(locDir,filesep+"MATLAB Drive")
-    open("Navigation.mlx")
+curFile = matlab.desktop.editor.getActive;
+if isMATLABReleaseOlderThan("R2023b")
+    open("SplashPage2.mlx")
 else
-    open("Overview.html")
+    open("SplashPage.mlx")
 end
-
+navFile = matlab.desktop.editor.getActive;
+if string(curFile.Filename) ~= string(navFile.Filename)
+    close(curFile)
+end
 end
