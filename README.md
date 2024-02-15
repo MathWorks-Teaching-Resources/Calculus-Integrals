@@ -54,7 +54,7 @@ Ensure you have all the required products ([listed below](#H_E850B4FF)) installe
 ## Products
 
 MATLAB® is used throughout. Tools from the Symbolic Math Toolbox™ are used frequently as well.
-
+ 
 # Scripts
 | **Full Script** <br>  | **Visualizations** <br>  | **Learning Goals** <br> In this script, students will... <br>  | **Practice** <br>   |
 | :-- | :-- | :-- | :-- |
