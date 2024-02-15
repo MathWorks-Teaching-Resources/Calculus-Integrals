@@ -1,218 +1,112 @@
-# Calculus-Integrals 
-[![View Calculus-Integrals on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) or
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj)
 
-[![GitHub top language](https://img.shields.io/github/languages/top/MathWorks-Teaching-Resources/Calculus-Integrals)](https://matlab.mathworks.com/)  [![Calculus-Integrals Module CI/CD](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals/actions/workflows/ci.yml/badge.svg)](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals/actions/workflows/ci.yml)
+# <span style="color:rgb(213,80,0)">Calculus \- Integrals</span>
 
-![MATLAB Code Issues](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Integrals%2Frelease%2Freport%2Fbadge%2Fcode_issues.json) ![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Integrals%2Frelease%2Freport%2Fbadge%2Ftested_with.json)
 
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj)
 
-**Curriculum Module**  
-_Created with R2021b. Compatible with R2021b and later releases._  
+![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Integrals%2Frelease%2FImages%2FTestedWith.json)
 
-## Description ##
-This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and a [MATLAB&reg; app](https://www.mathworks.com/products/matlab/app-designer.html) that teach basic concepts of integral calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of integral calculus.
+**Curriculum Module**
 
-Calculus-Integrals covers Riemann sum approximations to definite integrals, indefinite integrals as antiderivatives, and the fundamental theorem of calculus. It also covers the indefinite integrals of powers, exponentials, natural logarithms, sines and cosines as well as substitution and integration by parts. Applications include area and power. 
+_Created with R2021b. Compatible with R2021b and later releases._
 
-These live scripts can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class. The module is divided into three folders with the same content offered for different use: [Full Scripts](#fullscripts-folder), [Visualizations](#visualizations-folder), and [Practice](#practice-folder).
+# Information
 
-Opening `Integrals.prj` will add the module to your MATLAB path and open a navigation page where you can choose interactive examples by topic or type. The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the Stop button in the RUN section of the Live Editor tab in the MATLAB Toolstrip.
+This curriculum module contains interactive [MATLAB® live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach fundamental concepts and basic terminology related to integral calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of integral calculus.
 
-## Prerequisite Domain Knowledge ##
-This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. It also assumes knowledge of basic area formulas, including the area of a trapezoid. With the exception of integralRiemann.mlx and vizRiemann.mlx, the scripts are written to follow [Calculus-Derivatives](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives) and expect basic understanding of derivatives and derivative rules.
+## Background
 
-## Suggested Prework ##
-Minimal use of MATLAB syntax is required to complete some of the interactive practice, but it is all reviewed in the scripts themselves as needed. If you wish a more complete introduction to MATLAB, you can take
-[MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.<br>
+You can use these live scripts as [demonstrations](#H_9AAE657C) in lectures, class [activities](#H_EB6194F8), or interactive [assignments](#H_175C7D50) outside of class. Calculus \- Integrals covers [Riemann sum](#H_1F9663E8) approximations to definite integrals, indefinite integrals as [antiderivatives](#H_BA1C166C), and the [fundamental theorem of calculus](#H_A543F16F). It also covers the indefinite integrals of powers, exponentials, natural logarithms, sines, and cosines as well as [substitution](#H_A0468BE8) and [integration by parts](#H_D389B1B1). Applications include area and power. In addition to the[full scripts](#H_EB6194F8), [visualizations](#H_9AAE657C), and [practice scripts](#H_175C7D50) there is a [Calculus Flashcards app](#H_1F9459BC) included as well.
 
-Looking for more? Find an issue? Have a suggestion? Have questions?   
-Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
-# Details #
 
-## FullScripts Folder ##
-This folder includes scripts that integrate visualizations with instructional content and practice for active instruction or supported review. 
+The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/EndIcon.png" width="19" alt="image_0.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
-## ##
-**`integralRiemann.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralRiemann.mlx)
 
-An interactive script that facilitates exploration of simple geometric integral approximations including both rectangular and trapezoidal approximation methods. This script includes an analysis of real power generation data as well as visualizations of the error in each approximation method.
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks online teaching team](mailto:%20onlineteaching@mathworks.com).
 
-**Learning Goals:**
-- Explain and apply the different approximations computed by a left-endpoint, right-endpoint, midpoint, maximum, or minimum method of selecting a height value in a Riemann sum.
-- Discuss the implications for applying calculus in applications with values that are discrete or continuous.
-- Explain and apply the trapezoidal approximation.
+## Contact Us
 
-## ##
-**`integralAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralAntiderivatives.mlx)
+Solutions are available upon instructor request. Contact the [MathWorks teaching resources team](mailto:onlineteaching@mathworks.com) if you would like to request solutions, provide feedback, or if you have a question.
 
-An interactive script that facilitates exploration of the results of applying the integral as an antiderivative and presents opportunities for practice with immediate feedback.
+<a name="H_30BC7141"></a>
 
-<img src="https://user-images.githubusercontent.com/88841524/150543056-f999812b-24b9-4932-bfb0-afa6a592a88f.png" width="500">
+## Prerequisites
 
-**Learning Goals:**
-- Compute integrals of linear combinations of powers, sines, cosines, and exponentials by hand.
+This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. It also assumes knowledge of basic area formulas, including the area of a trapezoid. With the exception of <samp>Riemann.mlx</samp> and <samp>RiemannViz.mlx</samp>, the scripts are written to follow [Calculus\-Derivatives](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives) and expect basic understanding of derivatives and derivative rules. There is little expectation of familiarity with MATLAB, but you could use [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) as another resource to acquire familiarity with MATLAB.
 
-## ##
-**`integralSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralSubstitution.mlx)
+<a name="H_330E72C3"></a>
 
-An interactive script that presents visualizations of u-substitution and integration by parts as well as scaffolded and randomized practice with immediate feedback.
+## Getting Started
+### Accessing the Module
+### **On MATLAB Online:**
 
-<img src="https://user-images.githubusercontent.com/88841524/150543046-e8df0575-a924-42af-b48b-33d206fbd51b.gif" width="500">
+Use the [<img src="Images/OpenInMO.png" width="136" alt="image_1.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj) link to download the module. You will be prompted to log in or create a MathWorks account. The project will be loaded, and you will see an app with several navigation options to get you started.
 
-**Learning Goals:**
-- Explain what the method of substitution is and how it works. 
-- Compute integrals of combinations of powers, sines, cosines, exponentials and logarithms that are solvable by substitution by hand.
+### **On Desktop:**
 
-## ##
-**`integralByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralByParts.mlx)
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [Integrals.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
 
-An interactive script that presents visualizations of integration by parts as well as focused and randomized practice with immediate feedback.
 
-<img src="https://user-images.githubusercontent.com/88841524/150543114-8d08a0e5-1560-4871-b6b8-49525c252cef.png" width="500">
+Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="image_2.png"> **Add-Ons** > **Get Add-Ons**. 
 
-**Learning Goals:**
-- Explain what the method of integration by parts is and how it works.
-- Compute integrals involving powers, sines, cosines, exponentials and logarithms that are solvable by integration by parts by hand.
+<a name="H_E850B4FF"></a>
 
-## ## 
-**`integralFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=integralFundamentalTheorem.mlx)
+## Products
 
-An interactive script that presents visualizations of the fundamental theorem of calculus as well as an opportunity to practice computing definite integrals by hand with immediate feedback.
+MATLAB® is used throughout. Tools from the Symbolic Math Toolbox™ are used frequently as well.
 
-<img src="https://user-images.githubusercontent.com/88841524/150543100-4a69ad94-9830-4db4-a85d-9fe03baa30b8.png" width="500">
+# Scripts
+| **Topic** <br>  | **Full Script** <br>  | **Visualizations** <br>  | **Learning Goals** <br> In this script, students will... <br>  | **Practice** <br>   |
+| :-- | :-- | :-- | :-- | :-- |
+| [Antiderivatives](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Antiderivatives.mlx) <br>  | [Antiderivatives.mlx](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Antiderivatives.mlx) <br> <img src="Images/adf.png" width="135" alt="image_3.png"> <br>  | [Visualizing Antiderivatives](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/AntiderivativesViz.mlx) <br> <img src="Images/family.gif" width="135" alt="image_4.gif"> <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   see a graphical presentation of the concept of general antiderivatives. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   develop computational fluency with the antiderivatives of powers, sines, cosines, and exponentials. <br>  | [Calculate Antiderivatives](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/AntiderivativesPractice.mlx) <br> [  <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;{\int | space;\sin | space;(3z)\;dz=-\frac{\cos | space;(3z)}{3}+C} | space;">  ](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/AntiderivativesPractice.mlx) <br>   |
+| [Fundamental Theorem of Calculus](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/FundamentalTheorem.mlx) <br>  | [FundamentalTheorem.mlx](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/FundamentalTheorem.mlx) <br> <img src="Images/Ski-Area.png" width="135" alt="image_5.png"> <br>  | [Visualizing the FTC](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/FundamentalTheoremViz.mlx) <br> <img src="Images/FTC-generated.png" width="135" alt="image_6.png"> <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain the fundamental theorem of calculus. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   see why the Fundamental Theorem of Calculus makes sense graphically. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   develop computational fluency for definite integrals involving linear and rational combinations of powers, sines, cosines, exponentials and natural logarithms. <br>  | [Apply the Fundamental Theorem of Calculus](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/FundamentalTheoremPractice.mlx) <br> [  <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;{\int_1^3 | space;\frac{1}{w^2 | space;}\;dw=-\frac{1}{3}+1=\frac{2}{3}} | space;">  ](./FundamentalTheoremPractice.mlx) <br>   |
+| [Riemann Sums](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Riemann.mlx) <br>  | [Riemann.mlx](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Riemann.mlx) <br> <img src="Images/animSolar.gif" width="135" alt="image_7.gif"> <br>  | [Visualizing Riemann Sums](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/RiemannViz.mlx) <br> <img src="Images/AreaUnderCurve.png" width="135" alt="image_8.png"> <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain and apply the different approximations computed by a left\-endpoint, right\-endpoint, midpoint, maximum, or minimum method of selecting a height value in a Riemann sum. <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain and apply the trapezoidal approximation. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain why increasing the number of intervals in an approximation will decrease the error. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   discuss the implications for applying calculus in applications with values that are discrete or continuous. <br>   |
+| [Substitution](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Substitution.mlx) <br>  | [Substitution.mlx](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/Substitution.mlx) <br> <img src="Images/SubstIm.png" width="135" alt="image_9.png"> <br>  | [Visualizing Substitution](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/SubstitutionViz.mlx) <br> <img src="Images/animSubst.gif" width="135" alt="image_10.gif"> <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain what the method of substitution is and how it works. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   develop fluency with computing integrals of combinations of powers, sines, cosines, exponentials and logarithms that are solvable by substitution by hand. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   see a graphical understanding of the method of substitution. <br>  | [Apply the method of substitution](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/SubstitutionPractice.mlx) <br> [  <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;{\int | space;\frac{\cos | space;\left(\ln | space;(t)+1\right)}{t}\;dt=\sin | space;\left(\ln | space;(t)+1\right)+C} | space;">  ](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/SubstitutionPractice.mlx) <br>   |
+| [Integration by Parts](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/ByParts.mlx) <br>  | [ByParts.mlx](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/ByParts.mlx) <br> <img src="Images/IBP.png" width="135" alt="image_11.png"> <br>  | [Visualizing Integration by Parts](.Scripts/ByPartsViz.mlx) <br> <img src="Images/ibp-generated.png" width="135" alt="image_12.png"> <br>  |   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   explain what the method of integration by parts is and how it works. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   develop fluency with computing integrals involving powers, sines, cosines, exponentials and logarithms that are solvable by integration by parts by hand. <br>   <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;\bullet | space;">   see a graphical understanding of the integration by parts formula. <br>  | [Apply the method of integration by parts](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/ByPartsPractice.mlx) <br> [  <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;{\int | space;y^2 | space;e^y | space;\;dy=y^2 | space;e^y | space;-2ye^y | space;+2e^y | space;+C} | space;">  ](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Scripts/ByPartsPractice.mlx) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [  <img src="https://latex.codecogs.com/svg.latex?\inline | space; | space;=(y^2 | space;-2y+2)e^y | space;+C | space;">  ](matlab: edit practiceByParts.mlx) <br>   |
 
-**Learning Goals:**
-- Explain the fundamental theorem of calculus.
-- Fluently recognize and apply the rules for computing both definite and indefinite integrals. 
+<a name="H_1F9459BC"></a>
 
-## ##
+# [Calculus Flashcards App](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Apps/CalculusFlashcards.mlapp")
+| 1. Choose the type of practice. <br>  | 2. Solve problems. <br>  | 3. Analyze your progress. <br>   |
+| :-- | :-- | :-- |
+| <img src="Images/CalcFlashcardsSettings.png" width="276" alt="image_13.png">  | <img src="Images/CalcFlashcardsPractice.png" width="276" alt="image_14.png"> | <img src="Images/CalcFlashcardsAnalysis.png" width="276" alt="image_15.png">  |
 
-## Visualizations Folder ## 
-This folder includes scripts for the visualization examples alone, as you might use them in a lecture or class demonstration.
+# Setup To Use the Calculus Flashcards App
 
-## ##
-**`vizRiemann.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizRiemann.mlx)
+MATLAB Desktop
 
-An interactive script presenting visualizations of approximating the area under a user-defined curve by a user-defined number of rectangular or trapezoidal components as well as options to picture the error in each approximation. The only addition to this set of examples is the option to use a randomly selected point in each interval to determine the height of the rectangular approximation. This only makes sense in the context of an area defined by a function rather than by data, but could be useful for discussing why we generally just stick with interval endpoints. 
+1.  Ensure that you have MATLAB R2021a or newer installed.
+2. Download <samp>CalculusFlashcards.mlapp</samp> or download and unzip the entire repository.
+3. Right\-click the app in MATLAB and select run or type <samp>run("CalculusFlashcards.mlapp")</samp> in the Command Window.
 
-<img src="https://user-images.githubusercontent.com/88841524/150543083-249fa442-b709-46df-b997-48c77017d011.png" width="500">
+MATLAB Online
 
-**Learning Goals:**
-- Be able to sketch the graphical interpretation of geometric approximations to areas defined by curves and be able to explain why particular methods and particular curves result in especially good (or bad) approximations.
-- Explain why increasing the number of intervals in an approximation will decrease the error.
+1.  [<img src="Images/OpenInMO.png" width="136" alt="image_16.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Apps/CalculusFlashcards.mlapp)
+<a name="H_F61733D7"></a>
 
-## ##
-**`vizFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizFundamentalTheorem.mlx)
+# License
 
-An interactive script presenting geometric interpretations of both the integral and derivative forms of the Fundamental Theorem of Calculus, applied to user-defined functions. 
+The license for this module is available in the [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals/blob/release/LICENSE.md).
 
-<img src="https://user-images.githubusercontent.com/88841524/150543100-4a69ad94-9830-4db4-a85d-9fe03baa30b8.png" width="500">
+# Related Courseware Modules
+| **Courseware Module** <br>  | **Sample Content** <br>  | **Available on:** <br>   |
+| :-- | :-- | :-- |
+| [**Calculus: Derivatives**](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives)  <br>  | <img src="Images/CalcDer.png" width="171" alt="image_17.png"> <br>  | [<img src="Images/image_18.png" width="91" alt="image_18.png">](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives) <br> [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives/project=Derivatives.prj) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives)  <br>   |
+| <br>[**Numerical Methods with Applications**](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications) <br>  | <img src="Images/AreaLake.png" width="171" alt="image_20.png"> <br>  |[<img src="Images/OpenInFX.png" width="91" alt="image_21.png">](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications) <br> [<img src="Images/OpenInMO.png" width="136" alt="image_22.png">](https://matlab.mathworks.com/open/v1?repo=MathWorks-Teaching-Resources/Numerical-Methods-with-Applications/project=NumericalMethods.prj)   <br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives)  <br>   |
 
-**Learning Goals:**
-- Be able to explain why the Fundamental Theorem of Calculus makes sense graphically.
 
-## ##
-**`vizSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizSubstitution.mlx)
+Or feel free to explore our other [modular courseware content](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
 
-An interactive script presenting visualizations displaying the different curves generated by plotting f(g(x)) against g(x) or against x, as well as exploring the impact of using a step of dx or a step of dg = g'(x)dx to traverse the region of interest. The animation code geometrically demonstrates some of the potential savings by showing a default example where the dx integral adds and subtracts a region that the dg integral entirely ignores. 
+# Educator Resources
+-  [Educator Page](https://www.mathworks.com/academia/educators.html) 
+<a name="H_0FA5DA18"></a>
 
-<img src="https://user-images.githubusercontent.com/88841524/150543046-e8df0575-a924-42af-b48b-33d206fbd51b.gif" width="500">
+# Contribute 
 
-**Learning Goals:**
-- Graphical understanding of the method of substitution. 
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks teaching resources team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals/blob/release/CONTRIBUTING.md) page on GitHub.
 
-## ##
-**`vizByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizByParts.mlx)
 
-An interactive script presenting a geometric understanding of integration by parts. The default values generate a classic visualization of a definite integration by parts, but the code is designed to allow investigation of more complicated functions as well by allowing the separation of the resulting image into positive and negative regions with respect to each variable as well as showing or hiding the lines depicting the standard intervals for each variable. 
+ *©* Copyright 2023 The MathWorks™, Inc
 
-<img src="https://user-images.githubusercontent.com/88841524/150543114-8d08a0e5-1560-4871-b6b8-49525c252cef.png" width="500">
 
-**Learning Goals:**
-- Graphical understanding of the integration by parts formula. 
 
-## ##
-**`vizAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=vizAntiderivatives.mlx)
-
-An interactive script presenting a visualization of the family of antiderivatives.
-
-<img src="https://user-images.githubusercontent.com/88841524/150543056-f999812b-24b9-4932-bfb0-afa6a592a88f.png" width="500">
-
-**Learning Goals:**
-- Graphical understanding of the concept of general antiderivatives.
-
-## ## 
-
-## Practice Folder ##
-This folder includes scripts that are purely directed at student practice, as you might assign for homework or use for understanding checks during class or offer to students to help them study for an exam. 
-
-## ##
-**`CalculusFlashcards.mlapp`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=Navigation.mlx&line=1)
-
-A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. Some constructive feedback for common errors is automatically generated. 
-
-<img src="https://user-images.githubusercontent.com/88841524/142695933-c8fde966-d89e-4f2f-9d9f-e9445b52d1c8.png" width="500">
-
-**Learning Goals:**
-- Computational fluency with common functions and interactions including linearity, the product rule, and the chain rule for derivatives and linearity, substitution, integration by parts, and the fundamental theorem of calculus for integrals.
-
-## ##
-**`practiceFundamentalTheorem.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceFundamentalTheorem.mlx)
-
-An interactive set of randomly generated practice problems on definite integrals, including divergent integrals with finite bounds. The overall success rate within each session is available upon request but is not saved.
-
-**Learning Goals:**
-- Computational fluency for definite integrals involving linear and rational combinations of powers, sines, cosines, exponentials and natural logarithms.
-
-## ##
-**`practiceAntiderivatives.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceAntiderivatives.mlx)
-
-This script pulls together the interactive exercises for each simple antiderivative from `integralAntiderivatives.mlx` as well as the randomized practice.
-
-**Learning Goals:**
-- Computational fluency with the antiderivatives of powers, sines, cosines, and exponentials.
-
-## ##
-**`practiceSubstitution.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceSubstitution.mlx)
-
-This script pulls together the interactive exercises for substitution from `integralSubstitution.mlx` as well as the randomized practice.
-
-**Learning Goals:**
-- Computational fluency with the application of substitution as a method for solving simple integrals.
-
-## ##
-**`practiceByParts.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj&file=practiceByParts.mlx)
-
-This script pulls together the interactive exercises for applying the method of integration by parts presented in `integralByParts.mlx` as well as the randomized practice.
-
-**Learning Goals:**
-- Computational fluency with the application of the method of integration by parts to standard shapes of problems.
-
-## Setup To Use the Calculus Flashcards App ##
-### MATLAB&reg;
-
-1. Ensure that you have MATLAB R2021a or newer installed.
-2. Download `CalculusFlashcards.mlapp` or download and unzip the entire repository.
-3. Right-click the app in MATLAB and select <b>run</b> or double click on the live script (.mlx file) that you wish to run.
-
-### MATLAB Online&trade;
-1. Download `CalculusFlashcards.mlapp` or download and unzip the entire repository. 
-2. Drag and drop `CalculusFlashcards.mlapp` into the Current Folder in <a href="https://matlab.mathworks.com/">MATLAB Online</a>.
-3. Right-click the `CalculusFlashcards.mlapp` and select <b>run</b> or double click on the live script (.mlx file) that you wish to run.
-
-## Products ##
-MATLAB&reg;, Symbolic Math Toolbox&trade;
-
-## License ##
-The license for this module is available in the [LICENSE.md](LICENSE.md) file in this GitHub repository.
-
-## Educator Resources ##
-- [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
-- [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
-- [MATLAB Grader](https://www.mathworks.com/products/matlab-grader.html)
-  
-Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
-
-# #
-_Copyright 2022 The MathWorks, Inc._
