@@ -32,15 +32,15 @@ Results = Runner.run(Suite);
 
 if EnableReport
     web(fullfile(Folder,"index.html"))
-else
-    T = table(Results);
-    disp(newline + "Test summary:")
-    disp(T)
+% else
+%     T = table(Results);
+%     disp(newline + "Test summary:")
+%     disp(T)
 end
 
 % Format the results in a table and save them
 ResultsTable = table(Results')
-writetable(ResultsTable,fullfile("SoftwareTests","TestResults_"+release_version+".txt"));
+writetable(ResultsTable,fullfile("SoftwareTests","TestResults_R"+version("-release")+".txt"));
 
 % Assert success of test
 assertSuccess(Results);
