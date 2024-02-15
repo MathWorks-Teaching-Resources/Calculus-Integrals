@@ -1,16 +1,11 @@
-# This is a basic workflow to help you get started with MATLAB Actions
-
 name: MATLAB Build
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ release ]
   pull_request:
     branches: [ release ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -18,55 +13,87 @@ jobs:
     strategy: 
       fail-fast: false
       matrix:
-        MATLABVersion: [R2022b, R2023a]
-  # This workflow contains a single job called "build" build:
-    # The type of runner that the job will run on
+        MATLABVersion: [R2022a,R2022b,R2023a,R2023b]
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository
       - uses: actions/checkout@v3
       
-      # Sets up MATLAB on the GitHub Actions runner
+      # Sets up a display server
+      - name: Start display server
+        if: ${{ always() }}
+        run: |
+          sudo apt-get install xvfb
+          Xvfb :99 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      
+      # Sets up MATLAB
+      - name: Setup MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          release: ${{ matrix.MATLABVersion }}
+          products: Symbolic_Math_Toolbox
+          # List required products above in the format shown (and uncomment them)
+          # List of product strings:
+          # Simulink
+          # Statistics_and_Machine_Learning_Toolbox
+          # Simulink_Coder
+          # Econometrics_Toolbox
+          # Deep_Learning_Toolbox
+
+
+      # Run all the tests
+      - name: Run SmokeTests
+        uses: matlab-actions/run-command@v2
+        with:
+          command: openProject(pwd); RunAllTests; 
+
+      # Upload the test results as artifact
+      - name: Upload TestResults
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: TestResults
+          path: ./SoftwareTests/TestResults_${{ matrix.MATLABVersion }}.txt
+
+  badge:
+    if: ${{ always() }}
+    needs: [test]
+    strategy: 
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps: 
+
+      # Checks-out your repository
+      - uses: actions/checkout@v3
+      
+      # Sets up R2023b
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
         with:
-          release: ${{ matrix.MATLABVersion }}
+          release: R2023b
+  
+      # Download the test results from artifact
+      - name: Download TestResults
+        uses: actions/download-artifact@v2.1.1
+        with:
+          name: TestResults
+          path: ./SoftwareTests/
 
-      # Runs a set of commands using the runners shell
-      - name: Run all tests
+      # Create the test results badge
+      - name: Run CreateBadge
         uses: matlab-actions/run-command@v1
         with:
-          command: addpath("buildutil"); testModule("ModuleName","PROJECTNAME.prj","ReportSubdirectory","${{ matrix.MATLABVersion }}");
-
-      # Save the contents of the report directory from each release into a single artifact.  Since each release makes their own directory, they all update the same artifact.
-      - name: Save Report Directory
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: report
-          path: report
-
-      # Generate the JSON for the releases tested badge
-      - name: Generate tested with badge
-        uses: matlab-actions/run-command@v1
-        with:
-          command: addpath("buildutil"),badgesforModule()     
-          
-      # Publish test results from all the releases
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          junit_files: "report/*/test-results.xml"
+          command: openProject(pwd); CreateBadge;
 
       # Commit the JSON for the MATLAB releases badge 
-      - name: commit changed files
+      - name: Commit changed files
         continue-on-error: true
         run: |
           git config user.name "${{ github.workflow }} by ${{ github.actor }}"
           git config user.email "<>"
-          git commit report/badge/tested_with.json -m "Final checkins for release ${{  github.ref_name }}"
+          git pull
+          git add Images/TestedWith.json
+          git commit Images/TestedWith.json -m "Update CI badges ${{  github.ref_name }}"
           git fetch
           git push
+
