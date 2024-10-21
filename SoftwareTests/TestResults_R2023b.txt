@@ -1,0 +1,15 @@
+Version,File,Status,ElapsedTime
+R2023b,Antiderivatives.mlx,passed,1.174705e+01
+R2023b,AntiderivativesPractice.mlx,passed,1.237324e+00
+R2023b,AntiderivativesViz.mlx,passed,1.259872e+01
+R2023b,ByParts.mlx,passed,9.275476e+00
+R2023b,ByPartsPractice.mlx,passed,3.235664e+00
+R2023b,ByPartsViz.mlx,passed,8.701270e+00
+R2023b,FundamentalTheorem.mlx,passed,5.552346e+00
+R2023b,FundamentalTheoremPractice.mlx,passed,1.331846e+00
+R2023b,FundamentalTheoremViz.mlx,passed,3.044150e+00
+R2023b,Riemann.mlx,passed,7.073994e+01
+R2023b,RiemannViz.mlx,passed,5.730524e+01
+R2023b,Substitution.mlx,passed,1.642856e+01
+R2023b,SubstitutionPractice.mlx,passed,2.209729e+00
+R2023b,SubstitutionViz.mlx,passed,1.323952e+01
